@@ -1,0 +1,23 @@
+{
+  "name": "supabase",
+  "version": "1.0.0",
+  "description": "This project implements the backend for a B2B collaboration platform using Supabase, focusing on robust security, scalability, and maintainability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "powershell -File scripts/run_db_tests.ps1",
+    "test:db": "powershell -File scripts/run_db_tests.ps1",
+    "test:http": "node scripts/http_checks.mjs",
+    "edge:check": "node scripts/invoke_edge.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}

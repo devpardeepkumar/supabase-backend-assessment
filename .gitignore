@@ -1,0 +1,35 @@
+# Dependencies and compiled output
+node_modules/
+dist/
+
+# Secrets and local env (keep *.example)
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.p12
+
+# Supabase CLI local runtime (not part of the source deliverable)
+supabase/.temp/
+supabase/.branches/
+
+# Logs and OS / editor junk
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+.cursor/
+
+# Assessment briefs given to the candidate — not a submission deliverable
+/requirement.txt
+/Supabase_Assessment_Security_Testability_Addendum.md
+*.docx
+*.pdf
+
+# Leftover helper; official seed is supabase/seed.sql
+# (also embeds the well-known local demo service_role JWT)
+/scripts/create_test_users.ts
