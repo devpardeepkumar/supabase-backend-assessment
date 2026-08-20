@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",  // Output compiled JS files to a 'dist' directory
+    "rootDir": ".",       // Set rootDir to the project root
+    "types": ["node"]    // Include Node.js types
+  },
+  "include": ["scripts/**/*"],
+  "ts-node": {
+    "esm": true
+  }
+}
